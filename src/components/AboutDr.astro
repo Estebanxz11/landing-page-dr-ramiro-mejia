@@ -16,16 +16,12 @@
 
           <div class="relative glass rounded-3xl overflow-hidden shadow-2xl shadow-sky-900/40">
             <!-- Headshot placeholder -->
-            <div class="w-full h-[28rem] bg-gradient-to-br from-sky-50 to-sky-100 flex flex-col items-center justify-center relative border border-sky-100">
-              <div class="absolute inset-0 opacity-5" style="background: radial-gradient(circle at 70% 20%, #0ea5e9, transparent 60%)"></div>
-              <div class="w-28 h-28 rounded-full bg-sky-100 border-2 border-sky-300 flex items-center justify-center mb-4 animate-float">
-                <svg viewBox="0 0 64 64" class="w-14 h-14 text-sky-500" fill="currentColor">
-                  <circle cx="32" cy="20" r="12" opacity="0.8"/>
-                  <path d="M10 56c0-12.15 9.85-22 22-22s22 9.85 22 22" opacity="0.6"/>
-                </svg>
-              </div>
-              <p class="text-sky-600 font-display text-xl font-semibold">Dr. Ramiro Mejía</p>
-              <p class="text-slate-400 text-sm mt-1">Foto del Doctor</p>
+            <div class="w-full h-[28rem] relative overflow-hidden">
+              <img
+                src="/images/doctor2.webp"
+                alt="Dr. Ramiro Mejía - Ortodoncista"
+                class="w-full h-full object-cover object-top"
+              />
             </div>
 
             <!-- Bottom info strip -->
@@ -70,7 +66,7 @@
               </div>
               <div>
                 <p class="text-slate-700 text-xs font-bold">Pionero</p>
-                <p class="text-slate-400 text-xs">Ortod. Invisible EJE</p>
+                <p class="text-slate-400 text-xs">Ortodoncia Invisible</p>
               </div>
             </div>
           </div>
@@ -107,7 +103,7 @@
           {[
             'Pionero en ortodoncia invisible en el Eje Cafetero',
             'Ex Presidente SCO (Sociedad Colombiana de Ortodoncia) 2018–2020',
-            '15 años como docente de posgrado en la UAM',
+            '15 años como docente de posgrado en la UAM (Universidad Autónoma de Manizales)',
             'Tecnología moderna para resultados precisos y estéticos',
           ].map((item) => (
             <li class="flex items-start gap-3">
@@ -123,7 +119,7 @@
 
         <a
           href="#agenda"
-          class="inline-flex items-center gap-2 px-7 py-3.5 bg-gradient-to-r from-sky-500 to-sky-600 hover:from-sky-400 hover:to-sky-500 text-white font-semibold rounded-full shadow-lg shadow-sky-200 transition-all duration-300 hover:scale-105 group"
+          class="inline-flex items-center gap-2 px-7 py-3.5 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-full shadow-lg shadow-sky-500/40 transition-all duration-300 hover:scale-105 group"
         >
           Agenda tu Cita
           <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">

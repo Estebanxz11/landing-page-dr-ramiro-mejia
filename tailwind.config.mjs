@@ -1,30 +1,43 @@
 /** @type {import('tailwindcss').Config} */
+import colors from 'tailwindcss/colors';
+
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
-    extend: {
-      colors: {
-        primary: {
-          50:  '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#0ea5e9',
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e',
-        },
-        gold: {
-          400: '#f59e0b',
-          500: '#d97706',
-          600: '#b45309',
-        },
+    colors: {
+      // Spread all default Tailwind colors first
+      ...colors,
+      // Override `sky` completely with Dr. Ramiro Mejía's brand blue #355C98
+      sky: {
+        50:  '#eef2f9',
+        100: '#d6dff0',
+        200: '#adbfe0',
+        300: '#859ed1',
+        400: '#5c7ec2',
+        500: '#355C98',
+        600: '#2b4a7a',
+        700: '#20385c',
+        800: '#16263d',
+        900: '#0b131f',
       },
+      // Brand palette alias
+      primary: {
+        50:  '#eef2f9',
+        100: '#d6dff0',
+        200: '#adbfe0',
+        300: '#859ed1',
+        400: '#5c7ec2',
+        500: '#355C98',
+        600: '#2b4a7a',
+        700: '#20385c',
+        800: '#16263d',
+        900: '#0b131f',
+      },
+    },
+    extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Playfair Display', 'Georgia', 'serif'],
+        sans: ['Montserrat', 'system-ui', 'sans-serif'],
+        display: ['Montserrat', 'system-ui', 'sans-serif'],
       },
       animation: {
         'fade-up': 'fadeUp 0.7s ease forwards',

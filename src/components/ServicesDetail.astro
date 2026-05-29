@@ -4,11 +4,7 @@ const services = [
     id: 'invisible',
     label: 'Ortodoncia Invisible',
     color: 'sky',
-    icon: `<svg viewBox="0 0 64 64" class="w-10 h-10" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="10" y="16" width="44" height="34" rx="10" stroke="currentColor" stroke-width="2.5" fill="none" stroke-dasharray="6 3"/>
-      <path d="M20 28 Q32 22 44 28 Q32 36 20 28Z" stroke="currentColor" stroke-width="2" fill="currentColor" opacity="0.2"/>
-      <circle cx="32" cy="28" r="5" fill="currentColor" opacity="0.6"/>
-    </svg>`,
+    img: '/images/ortodoncia invisible.svg',
     description:
       'Alinea tus dientes de forma discreta, cómoda y estética con alineadores transparentes removibles. La ortodoncia invisible es ideal para quienes buscan resultados efectivos sin usar brackets visibles y con mayor facilidad de higiene.',
     highlight: 'Pionero en el Eje Cafetero',
@@ -18,13 +14,7 @@ const services = [
     id: 'convencional',
     label: 'Ortodoncia Convencional',
     color: 'blue',
-    icon: `<svg viewBox="0 0 64 64" class="w-10 h-10" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="10" y="14" width="44" height="38" rx="9" stroke="currentColor" stroke-width="2.5"/>
-      <rect x="20" y="24" width="7" height="16" rx="2.5" stroke="currentColor" stroke-width="2" fill="currentColor" opacity="0.2"/>
-      <rect x="29" y="22" width="7" height="18" rx="2.5" stroke="currentColor" stroke-width="2" fill="currentColor" opacity="0.2"/>
-      <rect x="38" y="25" width="6" height="13" rx="2.5" stroke="currentColor" stroke-width="2" fill="currentColor" opacity="0.2"/>
-      <path d="M14 44 Q32 52 50 44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-    </svg>`,
+    img: '/images/ortodoncia tradicional.svg',
     description:
       'La ortodoncia convencional con brackets es un tratamiento eficaz y preciso para corregir la posición de los dientes y la mordida. Permite tratar desde casos simples hasta complejos, mejorando la función, la salud oral y la estética de la sonrisa. En algunos pacientes, un diagnóstico y planificación adecuados pueden incluso ayudar a evitar la necesidad de cirugía maxilofacial.',
     highlight: 'Casos simples y complejos',
@@ -34,13 +24,7 @@ const services = [
     id: 'cirugia',
     label: 'Ortodoncia y Cirugía Maxilofacial',
     color: 'violet',
-    icon: `<svg viewBox="0 0 64 64" class="w-10 h-10" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M32 8 C18 8 12 20 12 30 C12 44 20 54 32 54 C44 54 52 44 52 30 C52 20 46 8 32 8Z" stroke="currentColor" stroke-width="2.5" fill="none"/>
-      <path d="M22 28 L42 28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M32 18 L32 40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-      <circle cx="48" cy="16" r="9" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="2"/>
-      <path d="M45 16 L47 18 L52 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>`,
+    img: '/images/Cirugia maxilofacial.svg',
     description:
       'Indicada para pacientes con alteraciones en la posición de los maxilares que requieren un manejo integral. La combinación de ortodoncia y cirugía maxilofacial busca mejorar la función, la armonía facial y la calidad de vida.',
     highlight: 'Manejo integral especializado',
@@ -50,12 +34,7 @@ const services = [
     id: 'blanqueamiento',
     label: 'Blanqueamiento Dental',
     color: 'amber',
-    icon: `<svg viewBox="0 0 64 64" class="w-10 h-10" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16 20 Q16 10 26 10 Q32 10 32 17 Q32 10 38 10 Q48 10 48 20 Q48 32 32 46 Q16 32 16 20Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" fill="currentColor" opacity="0.1"/>
-      <path d="M26 28 L30 32 L38 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle cx="50" cy="14" r="5" fill="currentColor" opacity="0.4"/>
-      <path d="M48 12 L50 14 L54 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>`,
+    img: '/images/Blanqueamiento.svg',
     description:
       'Recupera un tono dental más claro y uniforme de forma segura y controlada. El blanqueamiento dental mejora la apariencia de la sonrisa, siempre bajo valoración profesional para cuidar la salud de tus dientes.',
     highlight: 'Seguro y controlado',
@@ -65,12 +44,7 @@ const services = [
     id: 'higiene',
     label: 'Higiene Oral',
     color: 'emerald',
-    icon: `<svg viewBox="0 0 64 64" class="w-10 h-10" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="18" y="14" width="8" height="28" rx="4" stroke="currentColor" stroke-width="2.5" fill="currentColor" opacity="0.1"/>
-      <path d="M22 14 Q26 8 30 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
-      <circle cx="42" cy="36" r="13" stroke="currentColor" stroke-width="2.5" fill="none"/>
-      <path d="M42 28 L42 44 M34 36 L50 36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-    </svg>`,
+    img: '/images/higiene oral.svg',
     description:
       'La higiene oral profesional es clave para mantener dientes y encías sanos. Ayuda a eliminar placa y sarro, prevenir enfermedades periodontales y mantener tu sonrisa limpia y saludable, especialmente si estás en tratamiento de ortodoncia.',
     highlight: 'Esencial en ortodoncia',
@@ -80,14 +54,14 @@ const services = [
 
 const colorMap: Record<string, string> = {
   sky:     'text-sky-600 bg-sky-50 border-sky-200 hover:border-sky-400 hover:bg-sky-50',
-  blue:    'text-blue-600 bg-blue-50 border-blue-200 hover:border-blue-400 hover:bg-blue-50',
+  blue:    'text-sky-600 bg-sky-50 border-sky-200 hover:border-sky-400 hover:bg-sky-50',
   violet:  'text-violet-600 bg-violet-50 border-violet-200 hover:border-violet-400 hover:bg-violet-50',
   amber:   'text-amber-600 bg-amber-50 border-amber-200 hover:border-amber-400 hover:bg-amber-50',
   emerald: 'text-emerald-600 bg-emerald-50 border-emerald-200 hover:border-emerald-400 hover:bg-emerald-50',
 };
 const badgeMap: Record<string, string> = {
   sky:     'bg-sky-100 text-sky-700',
-  blue:    'bg-blue-100 text-blue-700',
+  blue:    'bg-sky-100 text-sky-700',
   violet:  'bg-violet-100 text-violet-700',
   amber:   'bg-amber-100 text-amber-700',
   emerald: 'bg-emerald-100 text-emerald-700',
@@ -120,8 +94,8 @@ const badgeMap: Record<string, string> = {
           style={`transition-delay:${i * 0.1}s`}
         >
           <!-- Icon -->
-          <div class={`w-16 h-16 rounded-2xl flex items-center justify-center mb-5 transition-transform group-hover:scale-110 duration-300 ${colorMap[s.color]}`}>
-            <span set:html={s.icon} />
+          <div class={`w-16 h-16 rounded-2xl flex items-center justify-center mb-5 transition-transform group-hover:scale-110 group-hover:rotate-3 duration-300 ${colorMap[s.color]}`}>
+            <img src={s.img} alt={s.label} loading="lazy" class="w-10 h-10 object-contain" />
           </div>
 
           <!-- Badge -->
@@ -175,7 +149,7 @@ const badgeMap: Record<string, string> = {
         </div>
         <a
           href="#agenda"
-          class="mt-8 flex items-center justify-center gap-2 w-full py-3 bg-gradient-to-r from-sky-500 to-sky-600 hover:from-sky-400 hover:to-sky-500 text-white font-semibold rounded-2xl shadow-lg shadow-sky-200 transition-all duration-300 hover:scale-105"
+          class="mt-8 flex items-center justify-center gap-2 w-full py-3 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-2xl shadow-lg shadow-sky-500/40 transition-all duration-300 hover:scale-105"
         >
           Agendar Valoración
           <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
